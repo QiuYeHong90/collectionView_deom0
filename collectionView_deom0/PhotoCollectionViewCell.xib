@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="163"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gDE-SC-cKh">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="163"/>
+                        <color key="backgroundColor" red="1" green="0.98801805209297588" blue="0.57866647292041495" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbr-zF-yIw">
+                        <rect key="frame" x="131" y="8" width="32" height="32"/>
+                        <color key="backgroundColor" red="1" green="0.83059936191993522" blue="0.67214598676203519" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="OCi-ea-hKV"/>
+                            <constraint firstAttribute="width" constant="32" id="OaD-hc-RYV"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="buttonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cM2-Cw-JV3"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="pbr-zF-yIw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="1ba-Wd-aMB"/>
+                <constraint firstAttribute="trailing" secondItem="gDE-SC-cKh" secondAttribute="trailing" id="2Is-ut-Ntk"/>
+                <constraint firstAttribute="trailing" secondItem="pbr-zF-yIw" secondAttribute="trailing" constant="8" id="SaZ-BE-rkR"/>
+                <constraint firstItem="gDE-SC-cKh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YkB-Fr-KSj"/>
+                <constraint firstAttribute="bottom" secondItem="gDE-SC-cKh" secondAttribute="bottom" id="a5C-sw-FtP"/>
+                <constraint firstItem="gDE-SC-cKh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lWI-Q7-Uoz"/>
+            </constraints>
+            <size key="customSize" width="171" height="163"/>
+            <connections>
+                <outlet property="bmageView" destination="gDE-SC-cKh" id="flk-2G-W0Q"/>
+                <outlet property="button" destination="pbr-zF-yIw" id="RVR-Kf-Kbq"/>
+            </connections>
+            <point key="canvasLocation" x="359.5" y="124.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
