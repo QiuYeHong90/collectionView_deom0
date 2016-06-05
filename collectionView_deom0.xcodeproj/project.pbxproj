@@ -18,7 +18,7 @@
 		0439D01A1CF69CE3003B63A0 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0439D0191CF69CE3003B63A0 /* AssetsLibrary.framework */; };
 		043B59BD1D02CCDD004EBFF4 /* YSPhotoDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B59BC1D02CCDD004EBFF4 /* YSPhotoDatas.m */; };
 		043B59C01D02D20C004EBFF4 /* YSPhotoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B59BF1D02D20C004EBFF4 /* YSPhotoGroup.m */; };
-		043B59C31D02DD99004EBFF4 /* YSPhotoAsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B59C21D02DD99004EBFF4 /* YSPhotoAsets.m */; };
+		043B59C81D02FD2A004EBFF4 /* YSPhotoAsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B59C71D02FD2A004EBFF4 /* YSPhotoAsets.m */; };
 		0475CA331CFB0A6B00AFD914 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0475CA311CFB0A6B00AFD914 /* PhotoCollectionViewCell.m */; };
 		0475CA341CFB0A6B00AFD914 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0475CA321CFB0A6B00AFD914 /* PhotoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -62,8 +62,9 @@
 		043B59BC1D02CCDD004EBFF4 /* YSPhotoDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSPhotoDatas.m; sourceTree = "<group>"; };
 		043B59BE1D02D20C004EBFF4 /* YSPhotoGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSPhotoGroup.h; sourceTree = "<group>"; };
 		043B59BF1D02D20C004EBFF4 /* YSPhotoGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSPhotoGroup.m; sourceTree = "<group>"; };
-		043B59C11D02DD99004EBFF4 /* YSPhotoAsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSPhotoAsets.h; path = Assets.xcassets/YSPhotoAsets.h; sourceTree = "<group>"; };
-		043B59C21D02DD99004EBFF4 /* YSPhotoAsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSPhotoAsets.m; path = Assets.xcassets/YSPhotoAsets.m; sourceTree = "<group>"; };
+		043B59C51D02FB1D004EBFF4 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		043B59C61D02FD15004EBFF4 /* YSPhotoAsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSPhotoAsets.h; sourceTree = "<group>"; };
+		043B59C71D02FD2A004EBFF4 /* YSPhotoAsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSPhotoAsets.m; sourceTree = "<group>"; };
 		0475CA301CFB0A6B00AFD914 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		0475CA311CFB0A6B00AFD914 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		0475CA321CFB0A6B00AFD914 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -123,10 +124,7 @@
 				0439CFEA1CF69CA0003B63A0 /* AppDelegate.m */,
 				0439CFEC1CF69CA0003B63A0 /* ViewController.h */,
 				0439CFED1CF69CA0003B63A0 /* ViewController.m */,
-				0475CA301CFB0A6B00AFD914 /* PhotoCollectionViewCell.h */,
-				0475CA311CFB0A6B00AFD914 /* PhotoCollectionViewCell.m */,
 				043B59C41D02F094004EBFF4 /* modle */,
-				0475CA321CFB0A6B00AFD914 /* PhotoCollectionViewCell.xib */,
 				0439CFEF1CF69CA0003B63A0 /* Main.storyboard */,
 				0439CFF21CF69CA0003B63A0 /* Assets.xcassets */,
 				0439CFF41CF69CA0003B63A0 /* LaunchScreen.storyboard */,
@@ -165,12 +163,16 @@
 		043B59C41D02F094004EBFF4 /* modle */ = {
 			isa = PBXGroup;
 			children = (
+				0475CA311CFB0A6B00AFD914 /* PhotoCollectionViewCell.m */,
+				0475CA301CFB0A6B00AFD914 /* PhotoCollectionViewCell.h */,
+				0475CA321CFB0A6B00AFD914 /* PhotoCollectionViewCell.xib */,
+				043B59C61D02FD15004EBFF4 /* YSPhotoAsets.h */,
+				043B59C71D02FD2A004EBFF4 /* YSPhotoAsets.m */,
 				043B59BB1D02CCDD004EBFF4 /* YSPhotoDatas.h */,
 				043B59BC1D02CCDD004EBFF4 /* YSPhotoDatas.m */,
 				043B59BE1D02D20C004EBFF4 /* YSPhotoGroup.h */,
 				043B59BF1D02D20C004EBFF4 /* YSPhotoGroup.m */,
-				043B59C11D02DD99004EBFF4 /* YSPhotoAsets.h */,
-				043B59C21D02DD99004EBFF4 /* YSPhotoAsets.m */,
+				043B59C51D02FB1D004EBFF4 /* Header.h */,
 			);
 			name = modle;
 			sourceTree = "<group>";
@@ -310,7 +312,7 @@
 				043B59BD1D02CCDD004EBFF4 /* YSPhotoDatas.m in Sources */,
 				0439CFEE1CF69CA0003B63A0 /* ViewController.m in Sources */,
 				0475CA331CFB0A6B00AFD914 /* PhotoCollectionViewCell.m in Sources */,
-				043B59C31D02DD99004EBFF4 /* YSPhotoAsets.m in Sources */,
+				043B59C81D02FD2A004EBFF4 /* YSPhotoAsets.m in Sources */,
 				0439CFEB1CF69CA0003B63A0 /* AppDelegate.m in Sources */,
 				0439CFE81CF69CA0003B63A0 /* main.m in Sources */,
 			);

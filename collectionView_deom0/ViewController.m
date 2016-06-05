@@ -8,9 +8,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "ViewController.h"
 #import "PhotoCollectionViewCell.h"
-#import "YSPhotoDatas.h"
-#import "YSPhotoGroup.h"
-#import "YSPhotoAsets.h"
+#import "Header.h"
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 {
   
